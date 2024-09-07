@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #joke {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Random Joke Generator</h1>
+    <div id="joke">Click the button for a joke!</div>
+    <button onclick="showRandomJoke()">Get a Random Joke</button>
+
+    <script>
+        const jokes = [
+            "Why don't skeletons fight each other? They don't have the guts.",
+            "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+            "Why don’t some couples go to the gym? Because some relationships don’t work out.",
+            "I would avoid the sushi if I was you. It’s a little fishy.",
+            "Want to hear a joke about construction? I’m still working on it.",
+            "Why don't eggs tell jokes? They'd crack each other up.",
+            "I don't trust stairs. They're always up to something.",
+            "Why did the scarecrow win an award? Because he was outstanding in his field!",
+            "I used to play piano by ear, but now I use my hands.",
+            "Why can’t your nose be 12 inches long? Because then it would be a foot.",
+            "How does a penguin build its house? Igloos it together.",
+            "I would tell you a chemistry joke but I know I wouldn’t get a reaction.",
+            "What do you call fake spaghetti? An impasta.",
+            "How do you organize a space party? You planet.",
+            "What did the grape do when he got stepped on? Nothing but let out a little wine!",
+            "Why don’t you ever see elephants hiding in trees? Because they’re so good at it.",
+            "What do you call cheese that isn't yours? Nacho cheese.",
+            "Why was the math book sad? It had too many problems.",
+            "How do you make a tissue dance? You put a little boogie in it.",
+            "What’s orange and sounds like a parrot? A carrot.",
+            "Why can’t you hear a pterodactyl go to the bathroom? Because the “P” is silent.",
+            "What do you call an alligator in a vest? An investigator.",
+            "Why was the belt arrested? For holding up a pair of pants.",
+            "What does a cloud wear under his raincoat? Thunderwear.",
+            "How do you catch a squirrel? Climb into a tree and act like a nut.",
+            "What did one hat say to the other? Stay here, I'm going on ahead.",
+            "What did one ocean say to the other ocean? Nothing, they just waved.",
+            "Why don’t skeletons ever go trick or treating? Because they have no body to go with.",
+            "What do you call a factory that makes good products? A satisfactory.",
+            "What did the janitor say when he jumped out of the closet? Supplies!",
+            "I asked the librarian if the library had any books on paranoia. She whispered, 'They're right behind you.'",
+            "Why don't you ever trust stairs? They're always up to something.",
+            "Why did the coffee file a police report? It got mugged.",
+            "How does a penguin build its house? Igloos it together.",
+            "Why are elevator jokes so classic and good? They work on many levels.",
+            "What do you call a bee that can’t make up its mind? A maybe.",
+            "Why don’t oysters donate to charity? Because they are shellfish.",
+            "Why did the bicycle fall over? Because it was two-tired.",
+            "Did you hear about the cheese factory that exploded in France",
+            "Why don't skeletons fight each other? They don't have the guts.",
+            "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+            "Why don’t some couples go to the gym? Because some relationships don’t work out.",
+            "Why don't eggs tell jokes? They'd crack each other up.",
+            "I don't trust stairs. They're always up to something.",
+            "Why did the scarecrow win an award? Because he was outstanding in his field!",
+            "I used to play piano by ear, but now I use my hands.",
+            "Why can’t your nose be 12 inches long? Because then it would be a foot.",
+            "How do you make a tissue dance? You put a little boogie in it.",
+            "What did the grape do when he got stepped on? Nothing but let out a little wine!",
+            "What do you call fake spaghetti? An impasta.",
+            "How do you organize a space party? You planet.",
+            "What’s orange and sounds like a parrot? A carrot.",
+            "Why was the math book sad? It had too many problems.",
+            "What do you call cheese that isn't yours? Nacho cheese.",
+            "How do you catch a squirrel? Climb into a tree and act like a nut.",
+            "What did one hat say to the other? Stay here, I'm going on ahead.",
+            "What do you call an alligator in a vest? An investigator.",
+            "What does a cloud wear under his raincoat? Thunderwear.",
+            "Why are elevator jokes so classic and good? They work on many levels."
+        ];
+
+        function showRandomJoke() {
+            const randomIndex = Math.floor(Math.random() * jokes.length);
+            document.getElementById("joke").textContent = jokes[randomIndex];
+        }
+    </script>
+
+</body>
+
+</html>
