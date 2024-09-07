@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            background:cyan ;
+        }
+        nav li {
+            padding: 15px 95px;
+            font-size: 20px;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            
+                <li>Home</li>
+                <li>List</li>
+                <li>Products</li>
+                <li>About US</li>
+            
+        </nav>
+    </header>
+    
+    
+    <table>
+        <td>Hello</td>
+        <tr> 1 uchiha</tr>
+        <tr>   2 senju</tr>
+        <tr>      3 uzumaki</tr>
+        <tr>          4 hyuga</tr>
+    </table>
+  
+
+
+
+
+
+<script>
+
+// 1. Quetion -------------------------------------  > 
+// create a navbar and change the color of its first element to cyan
+
+document.getElementsByTagName("nav")[0].firstElementChild.style.color = "yellow";
+
+// 2. Quetion -------------------------------------  > 
+// create a table without Tbody and check it is on view page source or not
+
+console.log("Not");
+
+// 3. Quetion -------------------------------------  > 
+// create a element of three children now change the color of first and last element to green
+
+document.getElementsByTagName("nav")[0].firstElementChild.style.color = "green";
+document.getElementsByTagName("nav")[0].lastElementChild.style.color = "green";
+
+// 4. Quetion -------------------------------------  > 
+// write a js code to change all li background color to yellow
+
+Array.from(document.getElementsByTagName("li")).forEach(element => {
+    element.style.background = "yellow";
+});
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
