@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    flex-direction: column;
+}
+
+.body {
+    background: rgb(74, 69, 69);
+}
+
+.bodychange {
+    background: rgb(76, 66, 66);
+}
+
+.container {
+    border-radius: 150px;
+    margin-top: 40px;
+    height: 300px;
+    width: 600px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    font-family: cursive;
+}
