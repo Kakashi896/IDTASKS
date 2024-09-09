@@ -1,0 +1,35 @@
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.bulb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(254, 254, 1);
+    height: 340px;
+    width: 340px;
+    border-radius: 250px;
+}
+
+.bulbstop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    height: 340px;
+    width: 340px;
+    border-radius: 250px;
+}
+
+
+footer{
+    text-align: center;
+    height: 50px;
+    background: gray;
+}
