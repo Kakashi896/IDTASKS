@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    i am start of this container (outer)
+<div class="container">
+    i am start of this container (inner)
+    <div id="first">I am first element</div>
+    i am end of this container (inner)
+</div>
+i am end of this container (outer)
+
+
+
+
+
+    <script>
+         console.log("Inserting other html tags in existing");
+         
+     let a = document.getElementsByTagName('div')[0]
+     a.innerHTML = a.innerHTML+'<h1>Hello world!</h1>';
+     
+     let div = document.createElement('div');
+     div.innerHTML = '<h1> this is created element</h1>';
+
+
+    //  playing with child you can check them one by one ---------- 
+
+
+    //  a.appendChild(div); // endind at the container
+    //  a.prepend(div);  // starting at the contianer
+    //  a.before(div); // before the container
+    //  a.replaceWith(div); // replace the container
+    
+    
+
+    </script>
+</body>
+
+</html>
