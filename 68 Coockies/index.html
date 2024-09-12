@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Coockeis In ' JAVASCRIPT '</h1>
+    <p>these are the small strings of data stored directly in the browser</p>
+
+
+
+
+    <script>
+        console.log(document.cookie)  // to check  the cookies
+        document.cookie = "name = Akshat"   // to set the cookie
+        document.cookie = "surname = Bhardwaj"   // to set the cookie
+        document.cookie = "ID = 705285"   // to set the cookie
+        let key = prompt("enter your key")
+        let value = prompt("enter your value")
+        document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}` // it will encode special charcyers like ();)
+        // decodeURIComponent(elem); // to decode the element which is tuped by user 
+        console.log(document.cookie)  
+    </script>
+</body>
+</html>
