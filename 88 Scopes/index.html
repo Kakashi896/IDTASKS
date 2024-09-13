@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Scopes In ' Javascript '</h1>
+    <p>Javascript has three type os scope :- <br>
+    1. BlockScope <br>
+    2. Function Scope <br>
+    3. Global Scope <br>
+    
+    </p>
+
+
+
+    <script>
+
+
+
+{let a =8; // let & const always have block level scope
+console.log(a);
+}
+
+
+{var a=9; // var have global scope
+}
+console.log(a);
+
+
+function c (){  // when we create a variable in a functions have it have only fuction level scope
+    let c = 10;
+    console.log(c);
+}
+c();
+// console.log(c);  // this will throw error
+
+
+
+    </script>
+</body>
+</html>
